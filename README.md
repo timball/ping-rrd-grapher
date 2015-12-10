@@ -9,14 +9,14 @@ Depends on a pile of utilities but prime among them is rrdtool.
 
     * moreutils
     * rrdtool
+    * OSX ... haven't done the things to make this many unix friendly just dealt w/ brew and sadness
 
 Usage:
     
-    1. `vi settings.sh` and edit `PING_HOST` to suit your needs.
-    2. create rrd db: `./create-ping-rrddb.sh`
-    3. ping things: `./do-ping.sh`
-    4. wait (the longer the better but will only graph 24h worth of stuff) 
-    5. graph things: `./graph-ping-rrddb.sh`
+    1. `./install.sh` and edit add the output line to your crontab to suit your needs.
+    2. hold on to your butts and optionally edit the etc/zping-hosts.conf
+    3. wait (the longer the better but will only graph 24h worth of stuff) 
+    5. images will be in the zpings/ directory
 
 ### Inspiration
 [https://calomel.org/rrdtool.html](https://calomel.org/rrdtool.html)
